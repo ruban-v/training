@@ -1,0 +1,7 @@
+{
+  "quiet": true,
+  "exec": "node index.js",
+  "events": {
+    "restart": "echo New Changes in File"
+  }
+}

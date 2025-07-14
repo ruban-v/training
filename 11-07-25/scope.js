@@ -7,3 +7,22 @@ console.log(userName); // logged globally - ruban
 }
 
 console.log(userName); // again logged globally - ruban
+
+// Practiced on 14-07-2025
+
+((...num) => {
+  val = 300; // global
+
+  {
+    val = 200; // local
+    for (let n of num) {
+      val -= n;
+    }
+    console.log(val);
+  }
+
+  for (let n of num) {
+    val -= n;
+  }
+  console.log(val);
+})(2, 3, 5, 7, 4, 3);

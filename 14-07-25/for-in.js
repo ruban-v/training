@@ -4,3 +4,6 @@ var values = {
   location: "tirupur",
 };
 
+for (let key in values) {
+  console.log(values[key]);
+}

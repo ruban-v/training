@@ -11,10 +11,10 @@ console.log(userName); // again logged globally - ruban
 // Practiced on 14-07-2025
 
 ((...num) => {
-  val = 300; // global
+  let val = 300; // global
 
   {
-    val = 200; // local
+    let val = 200; // local
     for (let n of num) {
       val -= n;
     }

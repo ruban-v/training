@@ -28,3 +28,51 @@ const products = [
 products.forEach(({ id, name, price, inStock }) =>
   console.log(id, name, price, inStock)
 );
+
+// practiced on 17-07-2025
+
+const productsAll = [
+  {
+    id: 101,
+    name: "Laptop",
+    price: 45000,
+    inStock: true,
+  },
+  {
+    id: 102,
+    name: "Mobile",
+    price: 20000,
+    inStock: false,
+  },
+  {
+    id: 103,
+    name: "Headphones",
+    price: 1500,
+    inStock: true,
+  },
+  {
+    id: 104,
+    name: "charger",
+    price: 2000,
+    inStock: true,
+  },
+];
+
+productsAll.forEach(({ id, name, price, inStock }) =>
+  console.log(id, name, price, inStock)
+);
+
+const nextObj = {
+  id: 105,
+  name: "Sound Bar",
+  price: 32000,
+  inStock: true,
+};
+
+productsAll.push(nextObj);
+
+console.log("After pushing");
+
+productsAll.forEach(({ id, name, price, inStock }) =>
+  console.log(id, name, price, inStock)
+);

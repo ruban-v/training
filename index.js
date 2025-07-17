@@ -28,3 +28,18 @@ const products = [
 products.forEach(({ id, name, price, inStock }) =>
   console.log(id, name, price, inStock)
 );
+
+const nextObj = {
+  id: 105,
+  name: "Sound Bar",
+  price: 32000,
+  inStock: true,
+};
+
+products.push(nextObj);
+
+console.log("After pushing");
+
+products.forEach(({ id, name, price, inStock }) =>
+  console.log(id, name, price, inStock)
+);
